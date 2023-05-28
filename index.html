@@ -8,11 +8,110 @@
     <title>Document</title>
 </head>
 <style>
+    body {
+        --bg-color: #fff;
+        --bg-secondary-color: #F6F6F6;
+        --text-color: #070707;
+        --text-secondary-color: #828282;
+        --separator-color: #828282;
+        --base-font-size: 18px;
+        --base-line-height: 22px;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+
+    .row {
+        width: 100%;
+    }
+
+    .row-alternate-color {
+        background-color: var(--bg-secondary-color);
+    }
+
+    .column {
+        max-width: 945px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .hero-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .content-block {
+        padding-top: 90px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .main-header {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--separator-color);
+    }
+
+    .main-header ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-contener {
+        display: flex;
+        max-width: 360px;
+        padding: 0 10px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-header ul a {
+        text-decoration: none;
+        color: var(--text-secondary-color);
+        font-weight: bold;
+    }
+
+    .main-header ul a.nav-item--active {
+        color: var(--text-color);
+    }
+
+    /* introduction */
+
+    .introduction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .denisn img {
+        width: 100%;
+    }
+
+    /* language */
     .language {
-        writing-mode: vertical-rl;
+        display: inline-block;
+        transform: rotate(-90deg);
         font-family: 'Gilroy-Bold';
-
-
     }
 
     .language-ru,
@@ -22,71 +121,148 @@
     }
 
     .language-ru {
-        color: #828282;
+        color: var(--text-secondary-color);
     }
 
     .language-eng {
         font-weight: bold;
-        color: black;
+        color: var(--text-color);
+    }
+
+    .url-portfolio {
+        font-family: 'Gilroy-Medium';
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        text-align: center;
+        text-decoration-line: underline;
+        color: var(--text-color);
+    }
+
+    .contact-text {
+        font-family: 'Gilroy-Medium';
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .portfolio-color {
+        background-color: var(--bg-secondary-color);
     }
 </style>
+</head>
 
 <body>
-    <div>
-        <header>
-            <ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Portfolio</li>
-                <li>Contacts</li>
-            </ul>
-        </header>
-        <div>
-            <h1>Denis <br> Novik</h1>
-            <div>
-                <div>UX | UI designer<br>24 years old, Minsk
-                </div>
-                <div class="language">
-                    <a class="language-eng" href="#">ENG</a> | <a class="language-ru" href="#">RU</a>
-                </div>
+    <div class="row">
+        <div class="column">
+            <header class="main-header">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a class="nav-item--active" href="#">Home</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
 
-            </div>
-            <h2>About me</h2>
-            <div>Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.<br>
-                I'm studying at courses "Web and mobile design
-                interfaces" in IT-Academy.<br>
-                Ready to implement excellent projects
-                with wonderful people.
-            </div>
-            <h2>Skills</h2>
-            <div>I work in such programs as
-
-            </div>
-            <h2>Portfolio</h2>
-            <div>
-                <div>
+    <div class="row">
+        <div class="column">
+            <div class="hero-block">
+                <div class="introduction">
+                    <h1>Denis<br>Novik</h1>
                     <div>
-                        <img width="936" height="510" src="./img/Слой 8.jpg" alt="picture">
+                        UX | UI designer,<br>
+                        24 years old, Minsk
+                    </div>
+                    <div class="language">
+                        <a class="language-ru" href="#">RU</a> | <a class="language-eng" href="#">ENG</a>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img width="936" height="522" src="./img/reebok_web.jpg" alt="picture">
-                    </div>
+                <div class="denisn">
+                    <img src="./img/BSPP2266.jpg" width="945" height="388" alt="picture">
                 </div>
-                <div>
-                    <div>
-                        <img width="936" height="522" src="./img/reebok_web (1).jpg" alt="picture">
-                    </div>
-                </div>
-            </div>
-            <div>
-
             </div>
         </div>
-        <footer></footer>
+    </div>
+    <div class="row row-alternate-color">
+        <div class="column">
+            <div class="content-block about">
+                <h2>About me</h2>
+                <div class="about__text">
+                    <p>
+                        Hi! My name is Denis and I am a UX/UI designer. I have been working in the field of design for 3
+                        years. I have experience in creating interfaces for mobile applications, websites, landing
+                        pages, and also in creating a brand identity.
+                    </p>
+                    <p>
+                        I am a responsible person, I always try to do my job efficiently and on time. I am constantly
+                        learning and improving my skills. I am interested in everything new in the field of design and I
+                        am always ready to learn something new.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="content-block">
+                <h2 class="skills_title">Skills</h2>
+                <div>I work in such programs as</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row portfolio-color">
+        <div class="column">
+            <div class="content-block">
+                <h2>Portfolio</h2>
+            </div>
+            <div>
+                <a href="#"><img width="936" height="510" src="./img/Слой 8.jpg" alt="picture"></a>
+                <a href="#">
+                    <p class="url-portfolio"> Online fashion store - Homepage</p>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <a href="#"> <img width="936" height="522" src="./img/reebok_web.jpg" alt="picture"></a>
+                <a href="#">
+                    <p class="url-portfolio"> Reebok Store - Concept</p>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <a href="#"><img width="936" height="522" src="./img/reebok_web (1).jpg" alt="picture"></a>
+                <a href="#">
+                    <p class="url-portfolio"> Braun Landing Page - Concept</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="content-block">
+                <h2 class="skills_title">Contacts</h2>
+                <div class="contact-text">Want to know more or just chat?<br>
+                    You are welcome!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-contener">
+        <div class="social">
+            <img width="41" height="41" src="./img/Vector.png">
+            <img width="41" height="41" src="./img/Vector (1).png">
+            <img width="41" height="41" src="./img/Vector (2).png">
+            <img width="41" height="41" src="./img/Vector (3).png">
+        </div>
     </div>
 </body>
 
