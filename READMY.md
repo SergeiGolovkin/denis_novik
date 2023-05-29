@@ -4,7 +4,7 @@
 
 Сайт написан на HTML.CSS. В рамках обучения в IT Academy
 
-[Github Pages](https://github.com/SergeiGolovkin/htmlCSS/deployments/activity_log?environment=github-pages)
+[Github Pages](https://sergeigolovkin.github.io/denis_novik/)
 
 ![Скриншот сайта](./denis_novik.png)
 
