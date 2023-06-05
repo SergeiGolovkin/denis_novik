@@ -6,158 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="novik.css">
+    <link rel="stylesheet" href="novik.css">
 </head>
 </head>
-<style>
-    body {
-        --bg-color: #fff;
-        --bg-secondary-color: #F6F6F6;
-        --text-color: #070707;
-        --text-secondary-color: #828282;
-        --separator-color: #828282;
-        --base-font-size: 18px;
-        --base-line-height: 22px;
-    }
 
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        font-size: var(--base-font-size);
-        line-height: var(--base-line-height);
-        background: var(--bg-color);
-        color: var(--text-color);
-    }
-
-
-    .row {
-        width: 100%;
-    }
-
-    .row-alternate-color {
-        background-color: var(--bg-secondary-color);
-    }
-
-    .column {
-        max-width: 945px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
-
-    .hero-block {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .content-block {
-        padding-top: 90px;
-        padding-bottom: 60px;
-        text-align: center;
-    }
-
-    .main-header {
-        padding: 20px 0;
-        border-bottom: 1px solid var(--separator-color);
-    }
-
-    .main-header ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-        list-style: none;
-        margin: 0;
-    }
-
-    .social {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .social-contener {
-        display: flex;
-        max-width: 360px;
-        padding: 0 10px;
-        margin: 0 auto;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-header ul a {
-        text-decoration: none;
-        color: var(--text-secondary-color);
-        font-weight: bold;
-    }
-
-    .main-header ul a.nav-item--active {
-        color: var(--text-color);
-    }
-
-    /* introduction */
-
-    .introduction {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-    }
-
-    .denisn img {
-        width: 100%;
-    }
-
-    /* language */
-    .language {
-        display: inline-block;
-        transform: rotate(-90deg);
-        font-family: 'Gilroy-Bold';
-    }
-
-    .language-ru,
-    .language-eng {
-        text-decoration: none;
-
-    }
-
-    .language-ru {
-        color: var(--text-secondary-color);
-    }
-
-    .language-eng {
-        font-weight: bold;
-        color: var(--text-color);
-    }
-
-    .url-portfolio {
-        font-family: 'Gilroy-Medium';
-        font-size: var(--base-font-size);
-        line-height: var(--base-line-height);
-        text-align: center;
-        text-decoration-line: underline;
-        color: var(--text-color);
-    }
-
-    .contact-text {
-        font-family: 'Gilroy-Medium';
-        font-size: var(--base-font-size);
-        line-height: var(--base-line-height);
-        text-align: center;
-        color: var(--text-color);
-    }
-
-    .portfolio-color {
-        background-color: var(--bg-secondary-color);
-    }
-
-    /* skils*/
-    .star {
-        display: flex;
-        align-items: center;
-    }
-</style>
 
 <body>
     <div class="row">
@@ -175,13 +27,52 @@
             </header>
         </div>
     </div>
+    <div>
+        <button class="mobile_icon_open">
+            <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="33" height="3.83721" fill="black" />
+                <rect y="7.67383" width="33" height="3.83721" fill="black" />
+                <rect y="15.3496" width="33" height="3.83721" fill="black" />
+            </svg>
 
+        </button>
+        <div class="row_mobile">
+            <div class="main-header_mobile">
+                <nav>
+                    <ul class="main-nav_mobile">
+                        <li><a class="nav-item--active" href="#">Home</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <button class="mobile_icon_close">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)"
+                                fill="#828282" />
+                            <rect x="0.831299" y="19.5566" width="27.3715" height="3.8"
+                                transform="rotate(-45 0.831299 19.5566)" fill="#828282" />
+                        </svg>
+                    </button>
+                    <div class="language">
+                        <a class="language-ru" href="#">RU</a> | <a class="language-eng" href="#">ENG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
     <div class="row">
         <div class="column">
             <div class="hero-block">
                 <div class="introduction">
                     <h1>Denis<br>Novik</h1>
-                    <div>
+                    <div class="hero_bio">
                         UX | UI designer,<br>
                         24 years old, Minsk
                     </div>
@@ -189,8 +80,11 @@
                         <a class="language-ru" href="#">RU</a> | <a class="language-eng" href="#">ENG</a>
                     </div>
                 </div>
-                <div class="denisn">
+                <div class="denisn_desktop">
                     <img src="./img/BSPP2266.jpg" width="945" height="388" alt="picture">
+                </div>
+                <div class="denisn_mob">
+                    <img src="./img/denis_mob.jpg" width="317" height="478" alt="imges denis">
                 </div>
             </div>
         </div>
@@ -201,14 +95,16 @@
                 <h2>About me</h2>
                 <div class="about__text">
                     <p>
-                        Hi! My name is Denis and I am a UX/UI designer. I have been working in the field of design for 3
-                        years. I have experience in creating interfaces for mobile applications, websites, landing
-                        pages, and also in creating a brand identity.
+                        Hi, I'm Denis – UX/UI designer from Minsk.<br>
+                        I'm interested in design and everything connected with it.
                     </p>
                     <p>
-                        I am a responsible person, I always try to do my job efficiently and on time. I am constantly
-                        learning and improving my skills. I am interested in everything new in the field of design and I
-                        am always ready to learn something new.
+                        I'm studying at courses "Web and mobile design<br>
+                        interfaces" in IT-Academy.
+                    </p>
+                    <p>
+                        Ready to implement excellent projects<br>
+                        with wonderful people.
                     </p>
                 </div>
             </div>
@@ -219,66 +115,66 @@
         <div class="column">
             <div class="content-block">
                 <h2 class="skills_title">Skills</h2>
-                <div>I work in such programs as</div>
+                <div class="skill_program">I work in such programs as</div>
                 <div>
-                    <div>
-                        <img width="90" height="90" src="./img/AP.png" alt="picture">
+                    <div class="skills_star">
+                        <img class="background-color_skills" width="90" height="90" src="./img/AP.png" alt="picture">
                         <div>
                             Adobe
                             <br>
                             Photoshop
                         </div>
                         <div class="star">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
                         </div>
                     </div>
-                    <div>
-                        <img width="90" height="90" src="./img/AP.png" alt="picture">
+                    <div class="skills_star">
+                        <img class="background-color_skills" width="90" height="90" src="./img/AI.png" alt="picture">
                         <div>
                             Adobe
                             <br>
                             Photoshop
                         </div>
                         <div class="star">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
                         </div>
                     </div>
-                    <div>
-                        <img width="90" height="90" src="./img/AP.png" alt="picture">
+                    <div class="skills_star">
+                        <img class="background-color_skills" width="90" height="90" src="./img/AAE.png" alt="picture">
                         <div>
                             Adobe
                             <br>
                             Photoshop
                         </div>
                         <div class="star">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
                         </div>
                     </div>
-                    <div>
-                        <img width="90" height="90" src="./img/AP.png" alt="picture">
+                    <div class="skills_star">
+                        <img width="90" height="90" src="./img/FIGMA.png" alt="picture">
                         <div>
                             Adobe
                             <br>
                             Photoshop
                         </div>
                         <div class="star">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star.png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
-                            <img width="22" height="20" src="./img/Star (1).png" alt="picture">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star.png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
+                            <img width="22" height="20" src="./img/Star (1).png" alt="picture star">
                         </div>
                     </div>
                 </div>
@@ -296,28 +192,42 @@
             <div class="content-block">
                 <h2>Portfolio</h2>
             </div>
-            <div>
+            <div class="portfolio_img_desktop">
                 <a href="#"><img width="936" height="510" src="./img/Слой 8.jpg" alt="picture"></a>
+            </div>
+            <div class="portfolio_img_mob">
+                <a href="#"><img width="316" height="176" src="./img/Home_page_mob.jpg" alt="picture Home page"> </a>
+            </div>
+            <div>
                 <a href="#">
                     <p class="url-portfolio"> Online fashion store - Homepage</p>
                 </a>
             </div>
+
         </div>
         <div class="column">
-            <div>
+            <div class="portfolio_img_desktop">
                 <a href="#"> <img width="936" height="522" src="./img/reebok_web.jpg" alt="picture"></a>
+            </div>
+            <div class="portfolio_img_mob">
+                <a href="#"><img width="316" height="176" src="./img/reebok_mob.jpg" alt="picture reebok mob"> </a>
+            </div>
+            <div>
                 <a href="#">
                     <p class="url-portfolio"> Reebok Store - Concept</p>
                 </a>
             </div>
         </div>
         <div class="column">
-            <div>
+            <div class="portfolio_img_desktop">
                 <a href="#"><img width="936" height="522" src="./img/reebok_web (1).jpg" alt="picture"></a>
-                <a href="#">
-                    <p class="url-portfolio"> Braun Landing Page - Concept</p>
-                </a>
             </div>
+            <div class="portfolio_img_mob">
+                <a href="#"><img width="316" height="176" src="./img/braum_mob.jpg" alt="picture braum"> </a>
+            </div>
+            <div><a href="#">
+                    <p class="url-portfolio"> Braun Landing Page - Concept</p>
+                </a></div>
         </div>
     </div>
     <div class="row">
@@ -326,6 +236,7 @@
                 <h2 class="skills_title">Contacts</h2>
                 <div class="contact-text">Want to know more or just chat?<br>
                     You are welcome!</div>
+                <button>Send message</button>
             </div>
         </div>
     </div>
@@ -336,6 +247,12 @@
             <img width="41" height="41" src="./img/Vector (1).png">
             <img width="41" height="41" src="./img/Vector (2).png">
             <img width="41" height="41" src="./img/Vector (3).png">
+        </div>
+        <div class="social-href">Like me on<br>
+            <a href="#">LinkedIn</a>,
+            <a href="#">Instagram,</a>
+            <a href="#">Behance,</a>
+            <a href="#">Dribble</a>
         </div>
     </div>
 </body>
