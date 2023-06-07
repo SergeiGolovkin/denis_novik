@@ -19,7 +19,7 @@ body {
     color: var(--text-color);
 }
 
-a:hover {
+body a:hover {
     text-decoration: none;
 }
 
@@ -30,7 +30,10 @@ a:hover {
 .row-alternate-color {
     background-color: var(--bg-secondary-color);
 }
-
+img:hover{
+    -webkit-transform: rotate(360deg); /* Градусы поворота можно изменить по необходимости */
+    transform: rotate(360deg);
+}
 .column {
     max-width: 945px;
     padding: 0 15px;
@@ -153,6 +156,10 @@ a:hover {
 .portfolio_img_mob {
     display: none;
 }
+.portfolio_img_desktop img{
+    width:100%;
+    height:auto;
+}
 
 .portfolio-color {
     background-color: var(--bg-secondary-color);
@@ -217,11 +224,18 @@ button {
     border: 1px solid rgb(212, 212, 212,0.5);
     width: 375px;
 }
-
-.main_mobile {
-    
+.main-nav_mobile{
+    list-style-type: none;
 }
-
+.main-nav_mobile a {
+    text-decoration: none;
+    font-family: Gilroy-Bold;
+font-size: 34px;
+line-height: 42px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--text-secondary-color);
+}
 @media (max-width :640px) {
 
     .skills_star {
